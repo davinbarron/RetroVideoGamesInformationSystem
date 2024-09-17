@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" spacing="20" style="-fx-background-color: #ADD8E6; -fx-background-size: cover;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="Application.GameMenu" prefHeight="400.0" prefWidth="600.0">
+    <Text style="-fx-font-size: 50px; -fx-font-weight: bold; -fx-fill: white; -fx-stroke: black; -fx-stroke-width: 1px;" text="Game Menu" />
+    <TableView fx:id="gameTable" />
+    <TextField fx:id="titleField" promptText="Title" />
+    <TextField fx:id="publisherField" promptText="Publisher" />
+    <TextField fx:id="descriptionField" promptText="Description" />
+    <TextField fx:id="developerField" promptText="Developer" />
+    <TextField fx:id="gameMachineField" promptText="Game Machine" />
+    <TextField fx:id="releaseYearField" promptText="Release Year" />
+    <TextField fx:id="coverImageUrlField" promptText="Cover Image URL" />
+    <Button fx:id="addButton" text="Add Game" style="-fx-background-color: #d01212; -fx-text-fill: white; -fx-font-weight: bold; -fx-pref-width: 200px; -fx-pref-height: 40px; -fx-stroke: black; -fx-stroke-width: 1px; -fx-background-radius: 0; -fx-background-insets: 0,1,2; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14px; -fx-padding: 10 20; -fx-border-color: black; -fx-border-width: 0.5px; -fx-border-radius: 0;" onAction="#addGame" onMouseEntered="#buttonHover" onMouseExited="#buttonExit" onMousePressed="#buttonPress" onMouseReleased="#buttonRelease" />
+</VBox>
